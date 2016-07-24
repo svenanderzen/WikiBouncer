@@ -21,6 +21,8 @@
 		"WikiBouncerHooks": "WikiBouncer.hooks.php"
 	},
 	"Hooks": {
-		
+		"AbortNewAccount": [
+			"WikiBouncerHooks::onAbortNewAccount"
+		]
 	}
 }
