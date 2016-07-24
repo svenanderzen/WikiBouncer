@@ -5,11 +5,11 @@ The WikiBouncer extension allows white-listing of certain domains upon account r
 1. Download a zipped version of this repository (or clone it using git) and place the `WikiBouncer` folder inside the MediaWiki `extensions` folder.
 
 2. Add the following to your `LocalSettings.php`
-```
-# Set up the WikiBouncer plugin for whitelisting domains.
-wfLoadExtension("WikiBouncer");
-$wgAllowedEmailDomains = array("example.com", "example.org");
-```
-And change the domains to your liking.
+    ```
+    # Set up the WikiBouncer plugin for whitelisting domains.
+    wfLoadExtension("WikiBouncer");
+    $wgAllowedEmailDomains = array("example.com", "example.org");
+    ```
+    And change the domains to your liking.
 
 3. Give yourself a thumbs up, cause you're done!
