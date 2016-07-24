@@ -1,0 +1,26 @@
+{
+	"manifest_version": 1,
+	"name": "WikiBouncer",
+	"author": [
+		"Sven Anderzén"
+	],
+	"version": "0.5",
+	"type": "other",
+	"url": "",
+	"descriptionmsg": "wikibouncer-desc",
+	"license-name": "WTFPL",
+	"require": {
+		"MediaWiki": ">= 1.25.0"
+	},
+	"MessageDirs": {
+		"WikiBouncer": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"WikiBouncerHooks": "WikiBouncer.hooks.php"
+	},
+	"Hooks": {
+		
+	}
+}
