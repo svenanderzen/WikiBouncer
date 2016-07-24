@@ -9,9 +9,6 @@
 	"url": "",
 	"descriptionmsg": "wikibouncer-desc",
 	"license-name": "WTFPL",
-	"require": {
-		"MediaWiki": ">= 1.25.0"
-	},
 	"MessagesDirs": {
 		"WikiBouncer": [
 			"i18n"
