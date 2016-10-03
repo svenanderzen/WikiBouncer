@@ -8,24 +8,24 @@
 
 class WikiBouncerHooks {
 
-	public static function onAbortNewAccount($user, &$message) {
-		global $wgRequest;
-		global $wgAllowedEmailDomains;
+    public static function onAbortNewAccount($user, &$message) {
+        global $wgRequest;
+        global $wgAllowedEmailDomains;
 
-		$emailDomain = explode("@", $wgRequest->getText("email"), 2)[1];
+        $emailDomain = explode("@", $wgRequest->getText("email"), 2)[1];
 
-		if (!empty($emailDomain)) {
-			foreach ($wgAllowedEmailDomains as $allowedEmailDomain) {
-				if ($emailDomain === $allowedEmailDomain) {
-					return true;
-				}
-			}
-		}
+        if (!empty($emailDomain)) {
+            foreach ($wgAllowedEmailDomains as $allowedEmailDomain) {
+                if ($emailDomain === $allowedEmailDomain) {
+                    return true;
+                }
+            }
+        }
 
-		$message = "The provided domain " . $emailDomain . " is blocked for account registration.";
+        $message = "The provided domain " . $emailDomain . " is blocked for account registration.";
 
-		return false;
-	}
+        return false;
+    }
 
 }
 

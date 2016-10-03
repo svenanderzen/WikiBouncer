@@ -1,25 +1,25 @@
 {
-	"manifest_version": 1,
-	"name": "WikiBouncer",
-	"author": [
-		"Sven Anderzén"
-	],
-	"version": "0.5",
-	"type": "other",
-	"url": "",
-	"descriptionmsg": "wikibouncer-desc",
-	"license-name": "WTFPL",
-	"MessagesDirs": {
-		"WikiBouncer": [
-			"i18n"
-		]
-	},
-	"AutoloadClasses": {
-		"WikiBouncerHooks": "WikiBouncer.hooks.php"
-	},
-	"Hooks": {
-		"AbortNewAccount": [
-			"WikiBouncerHooks::onAbortNewAccount"
-		]
-	}
+    "manifest_version": 1,
+    "name": "WikiBouncer",
+    "author": [
+        "Sven Anderzén"
+    ],
+    "version": "0.5",
+    "type": "other",
+    "url": "",
+    "descriptionmsg": "wikibouncer-desc",
+    "license-name": "WTFPL",
+    "MessagesDirs": {
+        "WikiBouncer": [
+            "i18n"
+        ]
+    },
+    "AutoloadClasses": {
+        "WikiBouncerHooks": "WikiBouncer.hooks.php"
+    },
+    "Hooks": {
+        "AbortNewAccount": [
+            "WikiBouncerHooks::onAbortNewAccount"
+        ]
+    }
 }
